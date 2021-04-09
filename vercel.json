@@ -2,9 +2,16 @@
   "version": 2,
   "builds": [
     {
-      "src": "index.js",
-      "use": "@now/node-server",
-      "test": "Thiago Caetano Lourenço"
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "*.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "*.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
