@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@now/node-server",
+      "test": "Thiago Caetano Lourenço"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    },
+    {
+      "src": "/",
+      "dest": "/index.js",
+      "methods": [
+        "GET"
+      ]
+    },
+    {
+      "src": "/cotacao",
+      "dest": "/index.js",
+      "methods": [
+        "GET"
+      ]
+    }
+  ]
+}
