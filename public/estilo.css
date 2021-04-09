@@ -6,12 +6,12 @@ body{
   }
   input , button{
     padding: 4px;
-    margin: 4px;
-    font-size: 15px;
+    margin: 8px;
+    font-size: 20px;
   }
   
   #fm input::-webkit-input-placeholder{
-    color: rgb(187, 184, 190);
+    color: rgb(184, 190, 189);
     opacity: 1;
   }
   #result{

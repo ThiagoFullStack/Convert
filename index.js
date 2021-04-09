@@ -18,14 +18,14 @@ app.get('/cotacao', (req, res) => {
   if (cotacao && quantidade) {
     const conversao = convert.convert(cotacao, quantidade)
     res.render('cotacao', {
-      error: false,
+      err: false,
       cotacao: convert.toMoney(cotacao),
       quantidade: convert.toMoney(quantidade),
       conversao: convert.toMoney(conversao)
     })
   } else {
     res.render('cotacao', {
-      error: 'Valores Inválidos'
+      err: 'Valores Inválidos'
     })
   }
 })
